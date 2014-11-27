@@ -1,0 +1,11 @@
+Vagrant.configure("2") do |c|
+  c.vm.box = "chef"
+  c.vm.box_url = "https://opscode-vm-bento.s3.amazonaws.com/vagrant/virtualbox/opscode_centos66_chef-provisionerless.box"
+  c.vm.hostname = "default-centos66.vagrantup.com"
+  c.vm.network(:forwarded_port, {:host=>8880, :guest=>80})
+  c.vm.network(:forwarded_port, {:host=>8443, :guest=>443})
+  c.vm.network(:private_network, {:ip=>"10.10.10.40"})
+  c.vm.synced_folder ".", "/vagrant", disabled: true
+  c.vm.provider :virtualbox do |p|
+  end
+end

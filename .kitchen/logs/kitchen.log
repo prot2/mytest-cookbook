@@ -1,0 +1,269 @@
+I, [2014-11-27T11:16:41.595947 #2332]  INFO -- Kitchen: -----> Starting Kitchen (v1.2.1)
+E, [2014-11-27T11:16:41.616949 #2332] ERROR -- Kitchen: ------Exception-------
+E, [2014-11-27T11:16:41.617949 #2332] ERROR -- Kitchen: Class: Kitchen::UserError
+E, [2014-11-27T11:16:41.618449 #2332] ERROR -- Kitchen: Message: Error parsing c:/_ARCHIWUM/2014/20141125a/mytest-cookbook/.kitchen.yml as YAML.
+Please run `kitchen diagnose --no-instances --loader' to help debug your issue.
+E, [2014-11-27T11:16:41.618449 #2332] ERROR -- Kitchen: ---Nested Exception---
+E, [2014-11-27T11:16:41.618449 #2332] ERROR -- Kitchen: Class: Psych::SyntaxError
+E, [2014-11-27T11:16:41.618449 #2332] ERROR -- Kitchen: Message: (<unknown>): did not find expected key while parsing a block mapping at line 17 column 5
+E, [2014-11-27T11:16:41.618949 #2332] ERROR -- Kitchen: ------Backtrace-------
+E, [2014-11-27T11:16:41.618949 #2332] ERROR -- Kitchen: C:/opscode/chefdk/embedded/apps/test-kitchen/lib/kitchen/loader/yaml.rb:211:in `rescue in parse_yaml_string'
+E, [2014-11-27T11:16:41.618949 #2332] ERROR -- Kitchen: C:/opscode/chefdk/embedded/apps/test-kitchen/lib/kitchen/loader/yaml.rb:200:in `parse_yaml_string'
+E, [2014-11-27T11:16:41.618949 #2332] ERROR -- Kitchen: C:/opscode/chefdk/embedded/apps/test-kitchen/lib/kitchen/loader/yaml.rb:113:in `yaml'
+E, [2014-11-27T11:16:41.619450 #2332] ERROR -- Kitchen: C:/opscode/chefdk/embedded/apps/test-kitchen/lib/kitchen/loader/yaml.rb:105:in `combined_hash'
+E, [2014-11-27T11:16:41.619450 #2332] ERROR -- Kitchen: C:/opscode/chefdk/embedded/apps/test-kitchen/lib/kitchen/loader/yaml.rb:77:in `read'
+E, [2014-11-27T11:16:41.619450 #2332] ERROR -- Kitchen: C:/opscode/chefdk/embedded/apps/test-kitchen/lib/kitchen/config.rb:78:in `data'
+E, [2014-11-27T11:16:41.619450 #2332] ERROR -- Kitchen: C:/opscode/chefdk/embedded/apps/test-kitchen/lib/kitchen/config.rb:66:in `suites'
+E, [2014-11-27T11:16:41.619450 #2332] ERROR -- Kitchen: C:/opscode/chefdk/embedded/apps/test-kitchen/lib/kitchen/config.rb:90:in `filter_instances'
+E, [2014-11-27T11:16:41.619450 #2332] ERROR -- Kitchen: C:/opscode/chefdk/embedded/apps/test-kitchen/lib/kitchen/config.rb:72:in `build_instances'
+E, [2014-11-27T11:16:41.619450 #2332] ERROR -- Kitchen: C:/opscode/chefdk/embedded/apps/test-kitchen/lib/kitchen/config.rb:52:in `instances'
+E, [2014-11-27T11:16:41.619950 #2332] ERROR -- Kitchen: C:/opscode/chefdk/embedded/apps/test-kitchen/lib/kitchen/command.rb:64:in `get_filtered_instances'
+E, [2014-11-27T11:16:41.619950 #2332] ERROR -- Kitchen: C:/opscode/chefdk/embedded/apps/test-kitchen/lib/kitchen/command.rb:85:in `parse_subcommand'
+E, [2014-11-27T11:16:41.619950 #2332] ERROR -- Kitchen: C:/opscode/chefdk/embedded/apps/test-kitchen/lib/kitchen/command/action.rb:37:in `block in call'
+E, [2014-11-27T11:16:41.619950 #2332] ERROR -- Kitchen: C:/opscode/chefdk/embedded/lib/ruby/2.0.0/benchmark.rb:281:in `measure'
+E, [2014-11-27T11:16:41.619950 #2332] ERROR -- Kitchen: C:/opscode/chefdk/embedded/apps/test-kitchen/lib/kitchen/command/action.rb:36:in `call'
+E, [2014-11-27T11:16:41.619950 #2332] ERROR -- Kitchen: C:/opscode/chefdk/embedded/apps/test-kitchen/lib/kitchen/cli.rb:47:in `perform'
+E, [2014-11-27T11:16:41.619950 #2332] ERROR -- Kitchen: C:/opscode/chefdk/embedded/apps/test-kitchen/lib/kitchen/cli.rb:118:in `block (2 levels) in <class:CLI>'
+E, [2014-11-27T11:16:41.619950 #2332] ERROR -- Kitchen: C:/opscode/chefdk/embedded/lib/ruby/gems/2.0.0/gems/thor-0.19.1/lib/thor/command.rb:27:in `run'
+E, [2014-11-27T11:16:41.619950 #2332] ERROR -- Kitchen: C:/opscode/chefdk/embedded/lib/ruby/gems/2.0.0/gems/thor-0.19.1/lib/thor/invocation.rb:126:in `invoke_command'
+E, [2014-11-27T11:16:41.619950 #2332] ERROR -- Kitchen: C:/opscode/chefdk/embedded/apps/test-kitchen/lib/kitchen/cli.rb:233:in `invoke_task'
+E, [2014-11-27T11:16:41.619950 #2332] ERROR -- Kitchen: C:/opscode/chefdk/embedded/lib/ruby/gems/2.0.0/gems/thor-0.19.1/lib/thor.rb:359:in `dispatch'
+E, [2014-11-27T11:16:41.620450 #2332] ERROR -- Kitchen: C:/opscode/chefdk/embedded/lib/ruby/gems/2.0.0/gems/thor-0.19.1/lib/thor/base.rb:440:in `start'
+E, [2014-11-27T11:16:41.620450 #2332] ERROR -- Kitchen: C:/opscode/chefdk/embedded/apps/test-kitchen/bin/kitchen:13:in `block in <top (required)>'
+E, [2014-11-27T11:16:41.620450 #2332] ERROR -- Kitchen: C:/opscode/chefdk/embedded/apps/test-kitchen/lib/kitchen/errors.rb:81:in `with_friendly_errors'
+E, [2014-11-27T11:16:41.620450 #2332] ERROR -- Kitchen: C:/opscode/chefdk/embedded/apps/test-kitchen/bin/kitchen:13:in `<top (required)>'
+E, [2014-11-27T11:16:41.620450 #2332] ERROR -- Kitchen: C:/opscode/chefdk/bin/kitchen:15:in `load'
+E, [2014-11-27T11:16:41.620450 #2332] ERROR -- Kitchen: C:/opscode/chefdk/bin/kitchen:15:in `<main>'
+E, [2014-11-27T11:16:41.620450 #2332] ERROR -- Kitchen: ----------------------
+I, [2014-11-27T11:17:15.066697 #5304]  INFO -- Kitchen: -----> Starting Kitchen (v1.2.1)
+I, [2014-11-27T11:17:15.237218 #5304]  INFO -- Kitchen: -----> Creating <default-centos66>...
+I, [2014-11-27T11:17:15.245219 #5304]  INFO -- Kitchen: -----> Kitchen is finished. (0m0.18s)
+I, [2014-11-27T11:17:46.444181 #7084]  INFO -- Kitchen: -----> Starting Kitchen (v1.2.1)
+E, [2014-11-27T11:17:46.477685 #7084] ERROR -- Kitchen: 
+No instances for regex `default-chef', try running `kitchen list'
+
+
+I, [2014-11-27T11:18:48.934616 #5088]  INFO -- Kitchen: -----> Starting Kitchen (v1.2.1)
+I, [2014-11-27T11:18:48.970621 #5088]  INFO -- Kitchen: -----> Converging <default-centos66>...
+I, [2014-11-27T11:18:48.981622 #5088]  INFO -- Kitchen: -----> Kitchen is finished. (0m0.05s)
+I, [2014-11-27T11:22:03.972383 #6636]  INFO -- Kitchen: -----> Starting Kitchen (v1.2.1)
+E, [2014-11-27T11:22:04.109401 #6636] ERROR -- Kitchen: ------Exception-------
+E, [2014-11-27T11:22:04.110401 #6636] ERROR -- Kitchen: Class: Kitchen::ShellOut::ShellCommandFailed
+E, [2014-11-27T11:22:04.110401 #6636] ERROR -- Kitchen: Message: Expected process to exit with [0], but received '1'
+---- Begin output of vagrant --version ----
+STDOUT: 
+STDERR: Nazwa 'vagrant' nie jest rozpoznawana jako polecenie wewn©trzne lub zewn©trzne,
+program wykonywalny lub plik wsadowy.
+---- End output of vagrant --version ----
+Ran vagrant --version returned 1
+E, [2014-11-27T11:22:04.110401 #6636] ERROR -- Kitchen: ---Nested Exception---
+E, [2014-11-27T11:22:04.110401 #6636] ERROR -- Kitchen: Class: Mixlib::ShellOut::ShellCommandFailed
+E, [2014-11-27T11:22:04.110901 #6636] ERROR -- Kitchen: Message: Expected process to exit with [0], but received '1'
+---- Begin output of vagrant --version ----
+STDOUT: 
+STDERR: Nazwa 'vagrant' nie jest rozpoznawana jako polecenie wewn©trzne lub zewn©trzne,
+program wykonywalny lub plik wsadowy.
+---- End output of vagrant --version ----
+Ran vagrant --version returned 1
+E, [2014-11-27T11:22:04.110901 #6636] ERROR -- Kitchen: ------Backtrace-------
+E, [2014-11-27T11:22:04.110901 #6636] ERROR -- Kitchen: C:/opscode/chefdk/embedded/apps/test-kitchen/lib/kitchen/shell_out.rb:70:in `rescue in run_command'
+E, [2014-11-27T11:22:04.110901 #6636] ERROR -- Kitchen: C:/opscode/chefdk/embedded/apps/test-kitchen/lib/kitchen/shell_out.rb:59:in `run_command'
+E, [2014-11-27T11:22:04.110901 #6636] ERROR -- Kitchen: C:/opscode/chefdk/embedded/apps/test-kitchen/lib/kitchen/driver/base.rb:158:in `run_command'
+E, [2014-11-27T11:22:04.111401 #6636] ERROR -- Kitchen: C:/opscode/chefdk/embedded/lib/ruby/gems/2.0.0/gems/kitchen-vagrant-0.15.0/lib/kitchen/driver/vagrant.rb:127:in `silently_run'
+E, [2014-11-27T11:22:04.111401 #6636] ERROR -- Kitchen: C:/opscode/chefdk/embedded/lib/ruby/gems/2.0.0/gems/kitchen-vagrant-0.15.0/lib/kitchen/driver/vagrant.rb:219:in `vagrant_version'
+E, [2014-11-27T11:22:04.111401 #6636] ERROR -- Kitchen: C:/opscode/chefdk/embedded/lib/ruby/gems/2.0.0/gems/kitchen-vagrant-0.15.0/lib/kitchen/driver/vagrant.rb:227:in `check_vagrant_version'
+E, [2014-11-27T11:22:04.111401 #6636] ERROR -- Kitchen: C:/opscode/chefdk/embedded/lib/ruby/gems/2.0.0/gems/kitchen-vagrant-0.15.0/lib/kitchen/driver/vagrant.rb:100:in `verify_dependencies'
+E, [2014-11-27T11:22:04.111401 #6636] ERROR -- Kitchen: C:/opscode/chefdk/embedded/apps/test-kitchen/lib/kitchen/driver.rb:45:in `for_plugin'
+E, [2014-11-27T11:22:04.111401 #6636] ERROR -- Kitchen: C:/opscode/chefdk/embedded/apps/test-kitchen/lib/kitchen/config.rb:124:in `new_driver'
+E, [2014-11-27T11:22:04.111401 #6636] ERROR -- Kitchen: C:/opscode/chefdk/embedded/apps/test-kitchen/lib/kitchen/config.rb:130:in `new_instance'
+E, [2014-11-27T11:22:04.111901 #6636] ERROR -- Kitchen: C:/opscode/chefdk/embedded/apps/test-kitchen/lib/kitchen/config.rb:73:in `block in build_instances'
+E, [2014-11-27T11:22:04.111901 #6636] ERROR -- Kitchen: C:/opscode/chefdk/embedded/apps/test-kitchen/lib/kitchen/config.rb:72:in `map'
+E, [2014-11-27T11:22:04.111901 #6636] ERROR -- Kitchen: C:/opscode/chefdk/embedded/apps/test-kitchen/lib/kitchen/config.rb:72:in `with_index'
+E, [2014-11-27T11:22:04.111901 #6636] ERROR -- Kitchen: C:/opscode/chefdk/embedded/apps/test-kitchen/lib/kitchen/config.rb:72:in `build_instances'
+E, [2014-11-27T11:22:04.111901 #6636] ERROR -- Kitchen: C:/opscode/chefdk/embedded/apps/test-kitchen/lib/kitchen/config.rb:52:in `instances'
+E, [2014-11-27T11:22:04.111901 #6636] ERROR -- Kitchen: C:/opscode/chefdk/embedded/apps/test-kitchen/lib/kitchen/command.rb:64:in `get_filtered_instances'
+E, [2014-11-27T11:22:04.111901 #6636] ERROR -- Kitchen: C:/opscode/chefdk/embedded/apps/test-kitchen/lib/kitchen/command.rb:85:in `parse_subcommand'
+E, [2014-11-27T11:22:04.111901 #6636] ERROR -- Kitchen: C:/opscode/chefdk/embedded/apps/test-kitchen/lib/kitchen/command/action.rb:37:in `block in call'
+E, [2014-11-27T11:22:04.111901 #6636] ERROR -- Kitchen: C:/opscode/chefdk/embedded/lib/ruby/2.0.0/benchmark.rb:281:in `measure'
+E, [2014-11-27T11:22:04.111901 #6636] ERROR -- Kitchen: C:/opscode/chefdk/embedded/apps/test-kitchen/lib/kitchen/command/action.rb:36:in `call'
+E, [2014-11-27T11:22:04.112401 #6636] ERROR -- Kitchen: C:/opscode/chefdk/embedded/apps/test-kitchen/lib/kitchen/cli.rb:47:in `perform'
+E, [2014-11-27T11:22:04.112401 #6636] ERROR -- Kitchen: C:/opscode/chefdk/embedded/apps/test-kitchen/lib/kitchen/cli.rb:118:in `block (2 levels) in <class:CLI>'
+E, [2014-11-27T11:22:04.112401 #6636] ERROR -- Kitchen: C:/opscode/chefdk/embedded/lib/ruby/gems/2.0.0/gems/thor-0.19.1/lib/thor/command.rb:27:in `run'
+E, [2014-11-27T11:22:04.112401 #6636] ERROR -- Kitchen: C:/opscode/chefdk/embedded/lib/ruby/gems/2.0.0/gems/thor-0.19.1/lib/thor/invocation.rb:126:in `invoke_command'
+E, [2014-11-27T11:22:04.112401 #6636] ERROR -- Kitchen: C:/opscode/chefdk/embedded/apps/test-kitchen/lib/kitchen/cli.rb:233:in `invoke_task'
+E, [2014-11-27T11:22:04.112401 #6636] ERROR -- Kitchen: C:/opscode/chefdk/embedded/lib/ruby/gems/2.0.0/gems/thor-0.19.1/lib/thor.rb:359:in `dispatch'
+E, [2014-11-27T11:22:04.112401 #6636] ERROR -- Kitchen: C:/opscode/chefdk/embedded/lib/ruby/gems/2.0.0/gems/thor-0.19.1/lib/thor/base.rb:440:in `start'
+E, [2014-11-27T11:22:04.112401 #6636] ERROR -- Kitchen: C:/opscode/chefdk/embedded/apps/test-kitchen/bin/kitchen:13:in `block in <top (required)>'
+E, [2014-11-27T11:22:04.112401 #6636] ERROR -- Kitchen: C:/opscode/chefdk/embedded/apps/test-kitchen/lib/kitchen/errors.rb:81:in `with_friendly_errors'
+E, [2014-11-27T11:22:04.112401 #6636] ERROR -- Kitchen: C:/opscode/chefdk/embedded/apps/test-kitchen/bin/kitchen:13:in `<top (required)>'
+E, [2014-11-27T11:22:04.112901 #6636] ERROR -- Kitchen: C:/opscode/chefdk/bin/kitchen:15:in `load'
+E, [2014-11-27T11:22:04.112901 #6636] ERROR -- Kitchen: C:/opscode/chefdk/bin/kitchen:15:in `<main>'
+E, [2014-11-27T11:22:04.112901 #6636] ERROR -- Kitchen: ----------------------
+I, [2014-11-27T11:22:44.074976 #5108]  INFO -- Kitchen: -----> Starting Kitchen (v1.2.1)
+E, [2014-11-27T11:22:44.160986 #5108] ERROR -- Kitchen: ------Exception-------
+E, [2014-11-27T11:22:44.161987 #5108] ERROR -- Kitchen: Class: Kitchen::ShellOut::ShellCommandFailed
+E, [2014-11-27T11:22:44.161987 #5108] ERROR -- Kitchen: Message: Expected process to exit with [0], but received '1'
+---- Begin output of vagrant --version ----
+STDOUT: 
+STDERR: Nazwa 'vagrant' nie jest rozpoznawana jako polecenie wewn©trzne lub zewn©trzne,
+program wykonywalny lub plik wsadowy.
+---- End output of vagrant --version ----
+Ran vagrant --version returned 1
+E, [2014-11-27T11:22:44.162487 #5108] ERROR -- Kitchen: ---Nested Exception---
+E, [2014-11-27T11:22:44.162487 #5108] ERROR -- Kitchen: Class: Mixlib::ShellOut::ShellCommandFailed
+E, [2014-11-27T11:22:44.162487 #5108] ERROR -- Kitchen: Message: Expected process to exit with [0], but received '1'
+---- Begin output of vagrant --version ----
+STDOUT: 
+STDERR: Nazwa 'vagrant' nie jest rozpoznawana jako polecenie wewn©trzne lub zewn©trzne,
+program wykonywalny lub plik wsadowy.
+---- End output of vagrant --version ----
+Ran vagrant --version returned 1
+E, [2014-11-27T11:22:44.162987 #5108] ERROR -- Kitchen: ------Backtrace-------
+E, [2014-11-27T11:22:44.162987 #5108] ERROR -- Kitchen: C:/opscode/chefdk/embedded/apps/test-kitchen/lib/kitchen/shell_out.rb:70:in `rescue in run_command'
+E, [2014-11-27T11:22:44.162987 #5108] ERROR -- Kitchen: C:/opscode/chefdk/embedded/apps/test-kitchen/lib/kitchen/shell_out.rb:59:in `run_command'
+E, [2014-11-27T11:22:44.162987 #5108] ERROR -- Kitchen: C:/opscode/chefdk/embedded/apps/test-kitchen/lib/kitchen/driver/base.rb:158:in `run_command'
+E, [2014-11-27T11:22:44.163487 #5108] ERROR -- Kitchen: C:/opscode/chefdk/embedded/lib/ruby/gems/2.0.0/gems/kitchen-vagrant-0.15.0/lib/kitchen/driver/vagrant.rb:127:in `silently_run'
+E, [2014-11-27T11:22:44.163487 #5108] ERROR -- Kitchen: C:/opscode/chefdk/embedded/lib/ruby/gems/2.0.0/gems/kitchen-vagrant-0.15.0/lib/kitchen/driver/vagrant.rb:219:in `vagrant_version'
+E, [2014-11-27T11:22:44.163487 #5108] ERROR -- Kitchen: C:/opscode/chefdk/embedded/lib/ruby/gems/2.0.0/gems/kitchen-vagrant-0.15.0/lib/kitchen/driver/vagrant.rb:227:in `check_vagrant_version'
+E, [2014-11-27T11:22:44.163487 #5108] ERROR -- Kitchen: C:/opscode/chefdk/embedded/lib/ruby/gems/2.0.0/gems/kitchen-vagrant-0.15.0/lib/kitchen/driver/vagrant.rb:100:in `verify_dependencies'
+E, [2014-11-27T11:22:44.163487 #5108] ERROR -- Kitchen: C:/opscode/chefdk/embedded/apps/test-kitchen/lib/kitchen/driver.rb:45:in `for_plugin'
+E, [2014-11-27T11:22:44.163487 #5108] ERROR -- Kitchen: C:/opscode/chefdk/embedded/apps/test-kitchen/lib/kitchen/config.rb:124:in `new_driver'
+E, [2014-11-27T11:22:44.163487 #5108] ERROR -- Kitchen: C:/opscode/chefdk/embedded/apps/test-kitchen/lib/kitchen/config.rb:130:in `new_instance'
+E, [2014-11-27T11:22:44.163487 #5108] ERROR -- Kitchen: C:/opscode/chefdk/embedded/apps/test-kitchen/lib/kitchen/config.rb:73:in `block in build_instances'
+E, [2014-11-27T11:22:44.163987 #5108] ERROR -- Kitchen: C:/opscode/chefdk/embedded/apps/test-kitchen/lib/kitchen/config.rb:72:in `map'
+E, [2014-11-27T11:22:44.163987 #5108] ERROR -- Kitchen: C:/opscode/chefdk/embedded/apps/test-kitchen/lib/kitchen/config.rb:72:in `with_index'
+E, [2014-11-27T11:22:44.163987 #5108] ERROR -- Kitchen: C:/opscode/chefdk/embedded/apps/test-kitchen/lib/kitchen/config.rb:72:in `build_instances'
+E, [2014-11-27T11:22:44.163987 #5108] ERROR -- Kitchen: C:/opscode/chefdk/embedded/apps/test-kitchen/lib/kitchen/config.rb:52:in `instances'
+E, [2014-11-27T11:22:44.163987 #5108] ERROR -- Kitchen: C:/opscode/chefdk/embedded/apps/test-kitchen/lib/kitchen/command.rb:64:in `get_filtered_instances'
+E, [2014-11-27T11:22:44.163987 #5108] ERROR -- Kitchen: C:/opscode/chefdk/embedded/apps/test-kitchen/lib/kitchen/command.rb:85:in `parse_subcommand'
+E, [2014-11-27T11:22:44.163987 #5108] ERROR -- Kitchen: C:/opscode/chefdk/embedded/apps/test-kitchen/lib/kitchen/command/action.rb:37:in `block in call'
+E, [2014-11-27T11:22:44.163987 #5108] ERROR -- Kitchen: C:/opscode/chefdk/embedded/lib/ruby/2.0.0/benchmark.rb:281:in `measure'
+E, [2014-11-27T11:22:44.163987 #5108] ERROR -- Kitchen: C:/opscode/chefdk/embedded/apps/test-kitchen/lib/kitchen/command/action.rb:36:in `call'
+E, [2014-11-27T11:22:44.163987 #5108] ERROR -- Kitchen: C:/opscode/chefdk/embedded/apps/test-kitchen/lib/kitchen/cli.rb:47:in `perform'
+E, [2014-11-27T11:22:44.164487 #5108] ERROR -- Kitchen: C:/opscode/chefdk/embedded/apps/test-kitchen/lib/kitchen/cli.rb:118:in `block (2 levels) in <class:CLI>'
+E, [2014-11-27T11:22:44.164487 #5108] ERROR -- Kitchen: C:/opscode/chefdk/embedded/lib/ruby/gems/2.0.0/gems/thor-0.19.1/lib/thor/command.rb:27:in `run'
+E, [2014-11-27T11:22:44.164487 #5108] ERROR -- Kitchen: C:/opscode/chefdk/embedded/lib/ruby/gems/2.0.0/gems/thor-0.19.1/lib/thor/invocation.rb:126:in `invoke_command'
+E, [2014-11-27T11:22:44.164487 #5108] ERROR -- Kitchen: C:/opscode/chefdk/embedded/apps/test-kitchen/lib/kitchen/cli.rb:233:in `invoke_task'
+E, [2014-11-27T11:22:44.164487 #5108] ERROR -- Kitchen: C:/opscode/chefdk/embedded/lib/ruby/gems/2.0.0/gems/thor-0.19.1/lib/thor.rb:359:in `dispatch'
+E, [2014-11-27T11:22:44.164487 #5108] ERROR -- Kitchen: C:/opscode/chefdk/embedded/lib/ruby/gems/2.0.0/gems/thor-0.19.1/lib/thor/base.rb:440:in `start'
+E, [2014-11-27T11:22:44.164487 #5108] ERROR -- Kitchen: C:/opscode/chefdk/embedded/apps/test-kitchen/bin/kitchen:13:in `block in <top (required)>'
+E, [2014-11-27T11:22:44.164487 #5108] ERROR -- Kitchen: C:/opscode/chefdk/embedded/apps/test-kitchen/lib/kitchen/errors.rb:81:in `with_friendly_errors'
+E, [2014-11-27T11:22:44.164487 #5108] ERROR -- Kitchen: C:/opscode/chefdk/embedded/apps/test-kitchen/bin/kitchen:13:in `<top (required)>'
+E, [2014-11-27T11:22:44.164487 #5108] ERROR -- Kitchen: C:/opscode/chefdk/bin/kitchen:15:in `load'
+E, [2014-11-27T11:22:44.164987 #5108] ERROR -- Kitchen: C:/opscode/chefdk/bin/kitchen:15:in `<main>'
+E, [2014-11-27T11:22:44.164987 #5108] ERROR -- Kitchen: ----------------------
+I, [2014-11-27T11:24:12.003641 #5820]  INFO -- Kitchen: -----> Starting Kitchen (v1.2.1)
+E, [2014-11-27T11:24:12.088652 #5820] ERROR -- Kitchen: ------Exception-------
+E, [2014-11-27T11:24:12.089652 #5820] ERROR -- Kitchen: Class: Kitchen::ShellOut::ShellCommandFailed
+E, [2014-11-27T11:24:12.089652 #5820] ERROR -- Kitchen: Message: Expected process to exit with [0], but received '1'
+---- Begin output of vagrant --version ----
+STDOUT: 
+STDERR: Nazwa 'vagrant' nie jest rozpoznawana jako polecenie wewn©trzne lub zewn©trzne,
+program wykonywalny lub plik wsadowy.
+---- End output of vagrant --version ----
+Ran vagrant --version returned 1
+E, [2014-11-27T11:24:12.090152 #5820] ERROR -- Kitchen: ---Nested Exception---
+E, [2014-11-27T11:24:12.090152 #5820] ERROR -- Kitchen: Class: Mixlib::ShellOut::ShellCommandFailed
+E, [2014-11-27T11:24:12.090152 #5820] ERROR -- Kitchen: Message: Expected process to exit with [0], but received '1'
+---- Begin output of vagrant --version ----
+STDOUT: 
+STDERR: Nazwa 'vagrant' nie jest rozpoznawana jako polecenie wewn©trzne lub zewn©trzne,
+program wykonywalny lub plik wsadowy.
+---- End output of vagrant --version ----
+Ran vagrant --version returned 1
+E, [2014-11-27T11:24:12.090152 #5820] ERROR -- Kitchen: ------Backtrace-------
+E, [2014-11-27T11:24:12.090152 #5820] ERROR -- Kitchen: C:/opscode/chefdk/embedded/apps/test-kitchen/lib/kitchen/shell_out.rb:70:in `rescue in run_command'
+E, [2014-11-27T11:24:12.090152 #5820] ERROR -- Kitchen: C:/opscode/chefdk/embedded/apps/test-kitchen/lib/kitchen/shell_out.rb:59:in `run_command'
+E, [2014-11-27T11:24:12.090152 #5820] ERROR -- Kitchen: C:/opscode/chefdk/embedded/apps/test-kitchen/lib/kitchen/driver/base.rb:158:in `run_command'
+E, [2014-11-27T11:24:12.090152 #5820] ERROR -- Kitchen: C:/opscode/chefdk/embedded/lib/ruby/gems/2.0.0/gems/kitchen-vagrant-0.15.0/lib/kitchen/driver/vagrant.rb:127:in `silently_run'
+E, [2014-11-27T11:24:12.090152 #5820] ERROR -- Kitchen: C:/opscode/chefdk/embedded/lib/ruby/gems/2.0.0/gems/kitchen-vagrant-0.15.0/lib/kitchen/driver/vagrant.rb:219:in `vagrant_version'
+E, [2014-11-27T11:24:12.090652 #5820] ERROR -- Kitchen: C:/opscode/chefdk/embedded/lib/ruby/gems/2.0.0/gems/kitchen-vagrant-0.15.0/lib/kitchen/driver/vagrant.rb:227:in `check_vagrant_version'
+E, [2014-11-27T11:24:12.090652 #5820] ERROR -- Kitchen: C:/opscode/chefdk/embedded/lib/ruby/gems/2.0.0/gems/kitchen-vagrant-0.15.0/lib/kitchen/driver/vagrant.rb:100:in `verify_dependencies'
+E, [2014-11-27T11:24:12.090652 #5820] ERROR -- Kitchen: C:/opscode/chefdk/embedded/apps/test-kitchen/lib/kitchen/driver.rb:45:in `for_plugin'
+E, [2014-11-27T11:24:12.090652 #5820] ERROR -- Kitchen: C:/opscode/chefdk/embedded/apps/test-kitchen/lib/kitchen/config.rb:124:in `new_driver'
+E, [2014-11-27T11:24:12.090652 #5820] ERROR -- Kitchen: C:/opscode/chefdk/embedded/apps/test-kitchen/lib/kitchen/config.rb:130:in `new_instance'
+E, [2014-11-27T11:24:12.090652 #5820] ERROR -- Kitchen: C:/opscode/chefdk/embedded/apps/test-kitchen/lib/kitchen/config.rb:73:in `block in build_instances'
+E, [2014-11-27T11:24:12.090652 #5820] ERROR -- Kitchen: C:/opscode/chefdk/embedded/apps/test-kitchen/lib/kitchen/config.rb:72:in `map'
+E, [2014-11-27T11:24:12.091152 #5820] ERROR -- Kitchen: C:/opscode/chefdk/embedded/apps/test-kitchen/lib/kitchen/config.rb:72:in `with_index'
+E, [2014-11-27T11:24:12.091152 #5820] ERROR -- Kitchen: C:/opscode/chefdk/embedded/apps/test-kitchen/lib/kitchen/config.rb:72:in `build_instances'
+E, [2014-11-27T11:24:12.091152 #5820] ERROR -- Kitchen: C:/opscode/chefdk/embedded/apps/test-kitchen/lib/kitchen/config.rb:52:in `instances'
+E, [2014-11-27T11:24:12.091152 #5820] ERROR -- Kitchen: C:/opscode/chefdk/embedded/apps/test-kitchen/lib/kitchen/command.rb:64:in `get_filtered_instances'
+E, [2014-11-27T11:24:12.091152 #5820] ERROR -- Kitchen: C:/opscode/chefdk/embedded/apps/test-kitchen/lib/kitchen/command.rb:85:in `parse_subcommand'
+E, [2014-11-27T11:24:12.091152 #5820] ERROR -- Kitchen: C:/opscode/chefdk/embedded/apps/test-kitchen/lib/kitchen/command/action.rb:37:in `block in call'
+E, [2014-11-27T11:24:12.091152 #5820] ERROR -- Kitchen: C:/opscode/chefdk/embedded/lib/ruby/2.0.0/benchmark.rb:281:in `measure'
+E, [2014-11-27T11:24:12.091652 #5820] ERROR -- Kitchen: C:/opscode/chefdk/embedded/apps/test-kitchen/lib/kitchen/command/action.rb:36:in `call'
+E, [2014-11-27T11:24:12.091652 #5820] ERROR -- Kitchen: C:/opscode/chefdk/embedded/apps/test-kitchen/lib/kitchen/cli.rb:47:in `perform'
+E, [2014-11-27T11:24:12.091652 #5820] ERROR -- Kitchen: C:/opscode/chefdk/embedded/apps/test-kitchen/lib/kitchen/cli.rb:118:in `block (2 levels) in <class:CLI>'
+E, [2014-11-27T11:24:12.091652 #5820] ERROR -- Kitchen: C:/opscode/chefdk/embedded/lib/ruby/gems/2.0.0/gems/thor-0.19.1/lib/thor/command.rb:27:in `run'
+E, [2014-11-27T11:24:12.091652 #5820] ERROR -- Kitchen: C:/opscode/chefdk/embedded/lib/ruby/gems/2.0.0/gems/thor-0.19.1/lib/thor/invocation.rb:126:in `invoke_command'
+E, [2014-11-27T11:24:12.091652 #5820] ERROR -- Kitchen: C:/opscode/chefdk/embedded/apps/test-kitchen/lib/kitchen/cli.rb:233:in `invoke_task'
+E, [2014-11-27T11:24:12.091652 #5820] ERROR -- Kitchen: C:/opscode/chefdk/embedded/lib/ruby/gems/2.0.0/gems/thor-0.19.1/lib/thor.rb:359:in `dispatch'
+E, [2014-11-27T11:24:12.091652 #5820] ERROR -- Kitchen: C:/opscode/chefdk/embedded/lib/ruby/gems/2.0.0/gems/thor-0.19.1/lib/thor/base.rb:440:in `start'
+E, [2014-11-27T11:24:12.091652 #5820] ERROR -- Kitchen: C:/opscode/chefdk/embedded/apps/test-kitchen/bin/kitchen:13:in `block in <top (required)>'
+E, [2014-11-27T11:24:12.091652 #5820] ERROR -- Kitchen: C:/opscode/chefdk/embedded/apps/test-kitchen/lib/kitchen/errors.rb:81:in `with_friendly_errors'
+E, [2014-11-27T11:24:12.091652 #5820] ERROR -- Kitchen: C:/opscode/chefdk/embedded/apps/test-kitchen/bin/kitchen:13:in `<top (required)>'
+E, [2014-11-27T11:24:12.092152 #5820] ERROR -- Kitchen: C:/opscode/chefdk/bin/kitchen:15:in `load'
+E, [2014-11-27T11:24:12.092152 #5820] ERROR -- Kitchen: C:/opscode/chefdk/bin/kitchen:15:in `<main>'
+E, [2014-11-27T11:24:12.092152 #5820] ERROR -- Kitchen: ----------------------
+I, [2014-11-27T11:36:44.332784 #6092]  INFO -- Kitchen: -----> Starting Kitchen (v1.2.1)
+I, [2014-11-27T11:36:45.698603 #6092]  INFO -- Kitchen: -----> Creating <default-centos66>...
+I, [2014-11-27T11:38:01.653013 #6092]  INFO -- Kitchen: -----> Kitchen is finished. (1m17.30s)
+I, [2014-11-27T11:41:24.660792 #5860]  INFO -- Kitchen: -----> Starting Kitchen (v1.2.1)
+I, [2014-11-27T11:41:25.116349 #5860]  INFO -- Kitchen: -----> Converging <default-centos66>...
+E, [2014-11-27T11:42:47.763844 #5860] ERROR -- Kitchen: Converge failed on instance <default-centos66>.
+I, [2014-11-27T11:47:57.800714 #3856]  INFO -- Kitchen: -----> Starting Kitchen (v1.2.1)
+I, [2014-11-27T11:47:58.236769 #3856]  INFO -- Kitchen: -----> Converging <default-centos66>...
+E, [2014-11-27T11:48:18.350824 #3856] ERROR -- Kitchen: Converge failed on instance <default-centos66>.
+I, [2014-11-27T11:50:14.400060 #3776]  INFO -- Kitchen: -----> Starting Kitchen (v1.2.1)
+I, [2014-11-27T11:50:14.793610 #3776]  INFO -- Kitchen: -----> Converging <default-centos66>...
+I, [2014-11-27T11:50:26.448090 #3776]  INFO -- Kitchen: -----> Kitchen is finished. (0m12.05s)
+I, [2014-11-27T11:50:40.403862 #2696]  INFO -- Kitchen: -----> Starting Kitchen (v1.2.1)
+I, [2014-11-27T11:50:40.777409 #2696]  INFO -- Kitchen: -----> Setting up <default-centos66>...
+I, [2014-11-27T11:50:40.785410 #2696]  INFO -- Kitchen: -----> Verifying <default-centos66>...
+I, [2014-11-27T11:50:40.794912 #2696]  INFO -- Kitchen: -----> Kitchen is finished. (0m0.39s)
+I, [2014-11-27T11:51:51.136344 #5540]  INFO -- Kitchen: -----> Starting Kitchen (v1.2.1)
+I, [2014-11-27T11:51:51.542395 #5540]  INFO -- Kitchen: -----> Cleaning up any prior instances of <default-centos66>
+I, [2014-11-27T11:51:51.548896 #5540]  INFO -- Kitchen: -----> Destroying <default-centos66>...
+I, [2014-11-27T11:52:00.356015 #5540]  INFO -- Kitchen: -----> Testing <default-centos66>
+I, [2014-11-27T11:52:00.358015 #5540]  INFO -- Kitchen: -----> Creating <default-centos66>...
+I, [2014-11-27T11:53:30.014900 #5540]  INFO -- Kitchen: -----> Converging <default-centos66>...
+I, [2014-11-27T11:54:27.855245 #5540]  INFO -- Kitchen: -----> Setting up <default-centos66>...
+I, [2014-11-27T11:54:27.862246 #5540]  INFO -- Kitchen: -----> Verifying <default-centos66>...
+I, [2014-11-27T11:54:27.908751 #5540]  INFO -- Kitchen: -----> Destroying <default-centos66>...
+I, [2014-11-27T11:54:37.329948 #5540]  INFO -- Kitchen: -----> Kitchen is finished. (2m46.19s)
+I, [2014-11-27T12:22:09.625763 #980]  INFO -- Kitchen: -----> Starting Kitchen (v1.2.1)
+I, [2014-11-27T12:22:10.112325 #980]  INFO -- Kitchen: -----> Cleaning up any prior instances of <default-centos66>
+I, [2014-11-27T12:22:10.113825 #980]  INFO -- Kitchen: -----> Destroying <default-centos66>...
+I, [2014-11-27T12:22:10.120326 #980]  INFO -- Kitchen: -----> Testing <default-centos66>
+I, [2014-11-27T12:22:10.122326 #980]  INFO -- Kitchen: -----> Creating <default-centos66>...
+I, [2014-11-27T12:24:31.343759 #980]  INFO -- Kitchen: -----> Converging <default-centos66>...
+I, [2014-11-27T12:25:30.421261 #980]  INFO -- Kitchen: -----> Setting up <default-centos66>...
+I, [2014-11-27T12:25:55.116396 #980]  INFO -- Kitchen: -----> Verifying <default-centos66>...
+E, [2014-11-27T12:26:18.358348 #980] ERROR -- Kitchen: Verify failed on instance <default-centos66>.
+I, [2014-11-27T12:26:45.790331 #7104]  INFO -- Kitchen: -----> Starting Kitchen (v1.2.1)
+I, [2014-11-27T12:26:46.214885 #7104]  INFO -- Kitchen: -----> Creating <default-centos66>...
+I, [2014-11-27T12:27:04.811747 #1128]  INFO -- Kitchen: -----> Starting Kitchen (v1.2.1)
+I, [2014-11-27T12:27:05.176793 #1128]  INFO -- Kitchen: -----> Converging <default-centos66>...
+I, [2014-11-27T12:27:14.552484 #1128]  INFO -- Kitchen: -----> Kitchen is finished. (0m9.74s)
+I, [2014-11-27T12:28:19.281203 #6304]  INFO -- Kitchen: -----> Starting Kitchen (v1.2.1)
+I, [2014-11-27T12:28:19.646249 #6304]  INFO -- Kitchen: -----> Setting up <default-centos66>...
+I, [2014-11-27T12:28:23.660259 #6304]  INFO -- Kitchen: -----> Verifying <default-centos66>...
+E, [2014-11-27T12:28:26.427110 #6304] ERROR -- Kitchen: Verify failed on instance <default-centos66>.
+I, [2014-11-27T13:06:00.385327 #6580]  INFO -- Kitchen: -----> Starting Kitchen (v1.2.1)
+I, [2014-11-27T13:06:00.889391 #6580]  INFO -- Kitchen: -----> Verifying <default-centos66>...
+E, [2014-11-27T13:06:05.786513 #6580] ERROR -- Kitchen: Verify failed on instance <default-centos66>.
+I, [2014-11-27T13:10:41.083971 #5816]  INFO -- Kitchen: -----> Starting Kitchen (v1.2.1)
+I, [2014-11-27T13:10:41.477021 #5816]  INFO -- Kitchen: -----> Verifying <default-centos66>...
+E, [2014-11-27T13:10:46.258128 #5816] ERROR -- Kitchen: Verify failed on instance <default-centos66>.
+I, [2014-11-27T13:12:24.546609 #264]  INFO -- Kitchen: -----> Starting Kitchen (v1.2.1)
+I, [2014-11-27T13:12:24.905655 #264]  INFO -- Kitchen: -----> Verifying <default-centos66>...
+E, [2014-11-27T13:12:29.688762 #264] ERROR -- Kitchen: Verify failed on instance <default-centos66>.
+I, [2014-11-27T13:14:42.549633 #6700]  INFO -- Kitchen: -----> Starting Kitchen (v1.2.1)
+I, [2014-11-27T13:14:42.927681 #6700]  INFO -- Kitchen: -----> Verifying <default-centos66>...
+E, [2014-11-27T13:14:47.700287 #6700] ERROR -- Kitchen: Verify failed on instance <default-centos66>.
+I, [2014-11-27T13:16:44.977680 #6680]  INFO -- Kitchen: -----> Starting Kitchen (v1.2.1)
+I, [2014-11-27T13:16:45.365729 #6680]  INFO -- Kitchen: -----> Verifying <default-centos66>...
+E, [2014-11-27T13:16:49.170712 #6680] ERROR -- Kitchen: Verify failed on instance <default-centos66>.
+I, [2014-11-27T13:17:35.220060 #6196]  INFO -- Kitchen: -----> Starting Kitchen (v1.2.1)
+I, [2014-11-27T13:17:35.577605 #6196]  INFO -- Kitchen: -----> Verifying <default-centos66>...
+I, [2014-11-27T13:17:40.289703 #6196]  INFO -- Kitchen: -----> Kitchen is finished. (0m5.07s)
